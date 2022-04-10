@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/wlaeri/personal-site#readme",
   "devDependencies": {
+    "typed-html": "^3.0.1",
     "typescript": "^4.6.3"
   }
 }
