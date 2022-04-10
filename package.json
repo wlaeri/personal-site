@@ -1,0 +1,23 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "The source code for willlaeri.com.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlaeri/personal-site.git"
+  },
+  "author": "Will Laeri <wlaeri@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wlaeri/personal-site/issues"
+  },
+  "homepage": "https://github.com/wlaeri/personal-site#readme"
+}
