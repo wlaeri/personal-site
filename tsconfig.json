@@ -6,7 +6,6 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "jsx": "react",
-    "jsxFactory": "elements.createElement"
+    "jsx": "react"
   }
 }
