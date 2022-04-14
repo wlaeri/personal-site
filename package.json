@@ -26,21 +26,22 @@
     "test": "npm run lint && npm run test:unit && npm run test:e2e"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mdx-js/react": "^1.6.22",
     "babel-jest": "^27.5.1",
     "jest": "^27.5.1",
     "modern-normalize": "^1.1.0",
     "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "theme-ui": "^0.14.2"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "17.0.23",
-    "@types/react": "18.0.3",
-    "@types/react-dom": "18.0.0",
+    "@types/react": "^17.0.44",
+    "@types/react-dom": "^17.0.15",
     "cypress": "^9.5.4",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",

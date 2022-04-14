@@ -23,7 +23,7 @@ const List = styled.ul<EmojiListProps>`
 
   ${({ listItems }) =>
     listItems.map((listItem, index) => {
-      return `li:nth-child(${index + 1}) {
+      return `li:nth-of-type(${index + 1}) {
     margin-top: ${index ? 16 : 0}px;
     list-style: '${listItem.emoji}  ';
     list-style-position: outside;
