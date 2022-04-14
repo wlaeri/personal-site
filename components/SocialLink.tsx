@@ -1,13 +1,15 @@
 import styled from '@emotion/styled'
 import Image from 'next/image'
-import { Flex, Heading } from 'theme-ui'
+import { Flex } from 'theme-ui'
 import { theme } from './theme'
 import { Grow } from './animations/Grow'
+import { H3, H4 } from './typography'
 
 const SocialLinkText = styled(Flex)`
   flex-direction: column;
   width: 124px;
   margin-left: 16px;
+  justify-content: center;
 `
 
 const SocialLinkContainer = styled.a`
@@ -42,8 +44,8 @@ export const SocialLink = ({
     <SocialLinkContainer href={href} target="_blank">
       <Image src={src} alt={alt} width={48} height={48} />
       <SocialLinkText>
-        <Heading as="h4">{title}</Heading>
-        <Heading as="h5">{subtitle}</Heading>
+        <H3>{title}</H3>
+        <H4>{subtitle}</H4>
       </SocialLinkText>
     </SocialLinkContainer>
   </Grow>

@@ -27,3 +27,24 @@ export const H2 = styled.h2`
     font-size: ${theme.fontSizes[6]}px;
   }
 `
+
+export const H3 = styled.h3`
+  ${baseHeading}
+  font-weight: 400;
+  font-size: ${theme.fontSizes[2]}px;
+  margin: 0px;
+`
+
+export const H4 = styled.h4`
+  ${baseHeading}
+  font-weight: 400;
+  font-size: ${theme.fontSizes[1]}px;
+  margin: 0px;
+`
+
+export const H5 = styled.h5`
+  ${baseHeading}
+  font-weight: 400;
+  font-size: ${theme.fontSizes[0]}px;
+  margin: 0px;
+`

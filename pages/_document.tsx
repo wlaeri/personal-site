@@ -1,14 +1,20 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { theme } from '../components/theme'
 
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content={theme.colors.background} />
+          <link rel="apple-touch-icon" href="/pwa/maskable_icon.png" />
+          <meta
+            name="apple-mobile-web-app-status-bar"
+            content={theme.colors.background}
+          />
           <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=optional"
             rel="stylesheet"
           />
         </Head>

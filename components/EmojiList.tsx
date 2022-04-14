@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import { Shrink } from './animations/Shrink'
+import { theme } from './theme'
 
 export interface EmojiListProps {
   listItems: Array<{
@@ -20,6 +21,7 @@ const List = styled.ul<EmojiListProps>`
   padding: 0;
   margin: 0;
   padding-left: 24px;
+  font-family: ${theme.fonts.heading};
 
   ${({ listItems }) =>
     listItems.map((listItem, index) => {

@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Flex, Grid, Heading } from 'theme-ui'
+import { Flex, Grid } from 'theme-ui'
 import { SocialLink } from '../components/SocialLink'
 import { EmojiList } from '../components/EmojiList'
 import { Button } from '../components/Button'
-import { H2 } from '../components/typography'
+import { H2, H5 } from '../components/typography'
 import { yearsBetween } from '../components/utils/yearsBetween'
 import {
   CopyRight,
@@ -50,6 +50,8 @@ const Home: NextPage = () => {
               alt="Headshot of Will Laeri"
               width={380}
               height={380}
+              quality={100}
+              priority
             />
           </Shrink>
         </Flex>
@@ -123,8 +125,8 @@ const Home: NextPage = () => {
           />
         </Grid>
         <CopyRight mb={4}>
-          <Heading as="h6">&copy; {now.getFullYear()} Will Laeri</Heading>
-          <Heading as="h6">All rights reserved.</Heading>
+          <H5>&copy; {now.getFullYear()} Will Laeri</H5>
+          <H5>All rights reserved.</H5>
         </CopyRight>
       </footer>
     </div>
