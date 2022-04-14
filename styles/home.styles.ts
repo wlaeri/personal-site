@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { Flex } from 'theme-ui'
 import Image from 'next/image'
 import { H1 } from '../components/typography'
-import { breakpoints, mediaQueries } from '../components/theme'
+import { boxShadow, breakpoints, mediaQueries } from '../components/theme'
 
 export const TextContent = styled(Flex)`
   flex-direction: column;
@@ -31,6 +31,7 @@ export const RoundedImage = styled(Image)`
   border-radius: 50%;
   max-width: ${breakpoints[0]}px;
   max-height: ${breakpoints[0]}px;
+  box-shadow: ${boxShadow};
 `
 
 export const CopyRight = styled(Flex)`

@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Flex } from 'theme-ui'
-import { theme } from './theme'
+import { boxShadow, theme } from './theme'
 import { Grow } from './animations/Grow'
 import { H3, H4 } from './typography'
+import { Box } from 'theme-ui'
 
 const SocialLinkText = styled(Flex)`
   flex-direction: column;
@@ -17,6 +18,12 @@ const SocialLinkContainer = styled.a`
   flex-direction: row;
   text-decoration: none;
   color: ${theme.colors.background};
+`
+
+const Icon = styled(Box)`
+  box-shadow: ${boxShadow};
+  height: 48px;
+  border-radius: 8px;
 `
 
 export interface SocialLinkProps {
@@ -42,7 +49,9 @@ export const SocialLink = ({
 }: SocialLinkProps): JSX.Element => (
   <Grow>
     <SocialLinkContainer href={href} target="_blank">
-      <Image src={src} alt={alt} width={48} height={48} />
+      <Icon>
+        <Image src={src} alt={alt} width={48} height={48} />
+      </Icon>
       <SocialLinkText>
         <H3>{title}</H3>
         <H4>{subtitle}</H4>
