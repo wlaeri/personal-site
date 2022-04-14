@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import { Shrink } from './animations/Shrink'
 
 export interface EmojiListProps {
   listItems: Array<{
@@ -34,9 +35,11 @@ const List = styled.ul<EmojiListProps>`
  * A component to render an unordered list where the bullets are replaced with emojis.
  */
 export const EmojiList = ({ listItems }: EmojiListProps): JSX.Element => (
-  <List listItems={listItems}>
-    {listItems.map((listItem, index) => (
-      <li key={index}>{listItem.content}</li>
-    ))}
-  </List>
+  <Shrink>
+    <List listItems={listItems}>
+      {listItems.map((listItem, index) => (
+        <li key={index}>{listItem.content}</li>
+      ))}
+    </List>
+  </Shrink>
 )

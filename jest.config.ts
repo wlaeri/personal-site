@@ -5,8 +5,9 @@ const config: Config.InitialOptions = {
   preset: 'ts-jest',
   transform: {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
-    '^.+\\.(js|jsx)$': 'babel-jest',
+    '^.+\\.(js|jsx)$': ['babel-jest', { configFile: './babel.config.jest.js' }],
   },
+  testPathIgnorePatterns: ['cypress'],
 }
 
 export default config

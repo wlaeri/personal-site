@@ -13,6 +13,8 @@ import {
   TextContent,
   Title,
 } from './index.styles'
+import { Shrink } from '../common/components/animations/Shrink'
+import { boxShadow } from '../common/theme'
 
 const Home: NextPage = () => {
   const now = new Date()
@@ -42,16 +44,22 @@ const Home: NextPage = () => {
       {/* Page content container */}
       <MainContainer>
         <Flex m={4}>
-          <RoundedImage
-            src="/headshot.jpeg"
-            alt="Headshot of Will Laeri"
-            width={380}
-            height={380}
-          />
+          <Shrink>
+            <RoundedImage
+              src="/headshot.jpeg"
+              alt="Headshot of Will Laeri"
+              width={380}
+              height={380}
+            />
+          </Shrink>
         </Flex>
         <TextContent mb={5}>
-          <Title>Will Laeri</Title>
-          <H2>Engineering Leader</H2>
+          <Shrink>
+            <Title>Will Laeri</Title>
+          </Shrink>
+          <Shrink>
+            <H2>Engineering Leader</H2>
+          </Shrink>
           <EmojiList
             listItems={[
               {
@@ -76,8 +84,12 @@ const Home: NextPage = () => {
       <footer>
         <Grid
           mb={4}
-          p={3}
-          sx={{ background: 'text', color: 'background' }}
+          p={4}
+          sx={{
+            background: 'text',
+            color: 'background',
+            boxShadow,
+          }}
           gap={3}
           columns={[1, 2, 4]}
         >
@@ -105,7 +117,7 @@ const Home: NextPage = () => {
           <SocialLink
             title="GitHub"
             subtitle="wlaeri"
-            href="https://github.com/wlaeri/"
+            href="https://github.com/wlaeri"
             src="/icons/github.svg"
             alt="GitHub icon"
           />

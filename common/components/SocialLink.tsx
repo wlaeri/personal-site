@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Flex, Heading } from 'theme-ui'
 import { theme } from '../theme'
+import { Grow } from './animations/Grow'
 
 const SocialLinkText = styled(Flex)`
   flex-direction: column;
@@ -37,11 +38,13 @@ export const SocialLink = ({
   src,
   alt,
 }: SocialLinkProps): JSX.Element => (
-  <SocialLinkContainer href={href} target="_blank">
-    <Image src={src} alt={alt} width={48} height={48} />
-    <SocialLinkText>
-      <Heading as="h4">{title}</Heading>
-      <Heading as="h5">{subtitle}</Heading>
-    </SocialLinkText>
-  </SocialLinkContainer>
+  <Grow>
+    <SocialLinkContainer href={href} target="_blank">
+      <Image src={src} alt={alt} width={48} height={48} />
+      <SocialLinkText>
+        <Heading as="h4">{title}</Heading>
+        <Heading as="h5">{subtitle}</Heading>
+      </SocialLinkText>
+    </SocialLinkContainer>
+  </Grow>
 )
