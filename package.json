@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The source code for willlaeri.com.",
   "engines": {
-    "node": ">=16",
+    "node": ">=14",
     "npm": ">=8"
   },
   "repository": {
