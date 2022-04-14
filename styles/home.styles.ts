@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 import { Flex } from 'theme-ui'
 import Image from 'next/image'
-import { H1 } from '../common/components/typography'
-import { breakpoints, mediaQueries } from '../common/theme'
+import { H1 } from '../components/typography'
+import { breakpoints, mediaQueries } from '../components/theme'
 
 export const TextContent = styled(Flex)`
   flex-direction: column;

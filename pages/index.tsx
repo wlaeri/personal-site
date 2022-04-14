@@ -1,20 +1,20 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Flex, Grid, Heading } from 'theme-ui'
-import { SocialLink } from '../common/components/SocialLink'
-import { EmojiList } from '../common/components/EmojiList'
-import { Button } from '../common/components/Button'
-import { H2 } from '../common/components/typography'
-import { yearsBetween } from '../common/utils/yearsBetween'
+import { SocialLink } from '../components/SocialLink'
+import { EmojiList } from '../components/EmojiList'
+import { Button } from '../components/Button'
+import { H2 } from '../components/typography'
+import { yearsBetween } from '../components/utils/yearsBetween'
 import {
   CopyRight,
   MainContainer,
   RoundedImage,
   TextContent,
   Title,
-} from './index.styles'
-import { Shrink } from '../common/components/animations/Shrink'
-import { boxShadow } from '../common/theme'
+} from '../styles/home.styles'
+import { Shrink } from '../components/animations/Shrink'
+import { boxShadow } from '../components/theme'
 
 const Home: NextPage = () => {
   const now = new Date()

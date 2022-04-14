@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { mediaQueries, theme } from '../theme'
+import { mediaQueries, theme } from './theme'
 
 const baseHeading = `
   font-family: ${theme.fonts.heading};

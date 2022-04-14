@@ -1,7 +1,7 @@
 import 'modern-normalize/modern-normalize.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'theme-ui'
-import { theme } from '../common/theme'
+import { theme } from '../components/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

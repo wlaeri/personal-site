@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Button as ThemeButton } from 'theme-ui'
-import { boxShadow, theme } from '../theme'
+import { boxShadow, theme } from './theme'
 
 export const Button = styled(ThemeButton)`
   color: ${theme.colors.background};

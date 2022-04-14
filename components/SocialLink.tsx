@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Flex, Heading } from 'theme-ui'
-import { theme } from '../theme'
+import { theme } from './theme'
 import { Grow } from './animations/Grow'
 
 const SocialLinkText = styled(Flex)`

@@ -3,5 +3,6 @@
   "compilerOptions": {
     "isolatedModules": false,
     "types": ["cypress"]
-  }
+  },
+  "exclude": ["node_modules"]
 }
