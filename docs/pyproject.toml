@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "personal-site-docs"
+version = "0.1.0"
+description = "Diagram generation for willlaeri.com."
+authors = ["Will Laeri <wlaeri@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.5"
+diagrams = "^0.21.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"

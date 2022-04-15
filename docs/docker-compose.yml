@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  docs:
+    build: .
+    volumes:
+      - type: bind
+        source: ./artifacts
+        target: /app/artifacts
+      - type: bind
+        source: ./src
+        target: /app/src

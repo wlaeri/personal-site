@@ -25,7 +25,8 @@
     "test:e2e": "cypress run",
     "test": "npm run lint && npm run test:unit && npm run test:e2e",
     "analyze:local": "lighthouse http://localhost:3000 --outputPath=lighthouse.html && open ./lighthouse.html",
-    "analyze:prod": "lighthouse https://www.willlaeri.com --outputPath=lighthouse.html && open ./lighthouse.html"
+    "analyze:prod": "lighthouse https://www.willlaeri.com --outputPath=lighthouse.html && open ./lighthouse.html",
+    "docs:generate": "docker-compose --file ./docs/docker-compose.yml up"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",

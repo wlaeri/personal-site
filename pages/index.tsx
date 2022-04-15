@@ -13,7 +13,6 @@ import {
   TextContent,
   Title,
 } from '../styles/home.styles'
-import { Shrink } from '../components/animations/Shrink'
 import { boxShadow } from '../components/theme'
 
 const Home: NextPage = () => {
@@ -44,24 +43,18 @@ const Home: NextPage = () => {
       {/* Page content container */}
       <MainContainer>
         <Flex m={4}>
-          <Shrink>
-            <RoundedImage
-              src="/headshot.jpeg"
-              alt="Headshot of Will Laeri"
-              width={380}
-              height={380}
-              quality={100}
-              priority
-            />
-          </Shrink>
+          <RoundedImage
+            src="/headshot.jpeg"
+            alt="Headshot of Will Laeri"
+            width={380}
+            height={380}
+            quality={100}
+            priority
+          />
         </Flex>
         <TextContent mb={5}>
-          <Shrink>
-            <Title>Will Laeri</Title>
-          </Shrink>
-          <Shrink>
-            <H2>Engineering Leader</H2>
-          </Shrink>
+          <Title>Will Laeri</Title>
+          <H2>Engineering Leader</H2>
           <EmojiList
             listItems={[
               {
