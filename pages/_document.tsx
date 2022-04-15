@@ -26,6 +26,12 @@ class MyDocument extends Document {
               }}
             />
           )}
+          {process.env.NODE_ENV === 'production' && (
+            <link
+              rel="preconnect"
+              href="https://static.cloudflareinsights.com"
+            />
+          )}
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content={theme.colors.background} />
           <link rel="apple-touch-icon" href="/pwa/maskable_icon.png" />

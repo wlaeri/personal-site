@@ -51,3 +51,13 @@ npm run build && npm run start
 
 Then, in another terminal you can run a [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 report on the running production build.
+
+```bash
+npm run analyze:local
+```
+
+You can also run the Lighthouse analysis against the website deployed to production.
+
+```bash
+npm run analyze:prod
+```
